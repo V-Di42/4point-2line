@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Point {
-    Scanner scanner = new Scanner(System.in); // сканер для ввода координат точки, переделать на чтение из файла
+    Scanner scanner = new Scanner(System.in); // переделать на чтение из файла
     int x, y; // объявляем переменные координат точки
 
     // делаем конструктор точки
