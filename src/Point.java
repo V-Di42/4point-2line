@@ -1,40 +1,45 @@
 import java.util.Scanner;
 
 public class Point {
-    Scanner scanner = new Scanner(System.in); // переделать на чтение из файла
-    int x, y; // объявляем переменные координат точки
+    private int x;
+    private int y;
 
     // делаем конструктор точки
+
     public Point() {
-        this(0, 0);
-    }
+    };
 
     public Point(int x, int y) {
         this.x = x;
         this.y = y;
     }
 
-    // создаём точку
-    public Point createdPoint() {
-        int x = (int) (scanner.nextInt()); //реализовать чтение из файла
-        int y = (int) (scanner.nextInt()); //реализовать чтение из файла
-        Point p = new Point(x, y);
-        return p;
-
+    public static void main(String[] args) {
+        Point p1 = new Point();
+        p1.x = 1;
+        p1.y = 2;
     }
-
+// конструкторы
     public int getX() {
         return x;
+    }
+
+    public void setX(int x) {
+        this.x = x;
     }
 
     public int getY() {
         return y;
     }
-// спер, разобраться что за исключение и зачем!!!
-//    @Override
-//    public String toString() {
-//        return "(" + x + ";" + y + ")";
-//    }
+
+    public void setY(int y) {
+        this.y = y;
+    }
+    // спер, разобраться с переопределением!!!
+    @Override
+    public String toString() {
+        return String.format("Создали точку с координатами " + x + " и " + y);
+    }
 }
 
 
