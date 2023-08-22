@@ -1,4 +1,4 @@
-package com.training;
+package com.training.bean;
 
 public class Point {
     private int x;
