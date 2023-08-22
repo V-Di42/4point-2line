@@ -1,3 +1,5 @@
+package com.training;
+
 public class Line {
     private Point a;
     private Point b;
